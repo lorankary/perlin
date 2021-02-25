@@ -28,7 +28,7 @@ function Game(){
     noise.seed(Math.random());
     let x_off = 0.1;
     let y_off = 0.1;
-    let x = 0, y = 10000;
+    let x = 0, y = 10;
     let p_min = 10, p_max = -10;
     for (let r = 0; r < this.grid.length; r++) {
         for (let c = 0; c < this.grid[r].length; c++) {
