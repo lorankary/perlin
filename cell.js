@@ -23,11 +23,11 @@ class Cell {
     render() {
         let ctx = game.ctx;
 
-        if(this.occupied) {
-            ctx.fillStyle = "burlywood";
-            ctx.fillRect(this.loc.x, this.loc.y,this.width, this.height);
-        }
-        ctx.fillStyle = this.color;
+        // if(this.occupied) {
+        //     ctx.fillStyle = "burlywood";
+        //     ctx.fillRect(this.loc.x, this.loc.y,this.width, this.height);
+        // }
+        ctx.fillStyle = this.tileType.color;
         ctx.fillRect(this.loc.x, this.loc.y,this.width, this.height);
 
         //render cell
